@@ -5,32 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+Preprint
+-======
+-Zhao, H., Jiang, W., Song, S., Lyu, L., Chang, C., Zhao, Y., ... & Girgenti, M. (2023). A robust penalized-regression-based method for multivariable Mendelian randomization using GWAS summary statistics. [paper](https://www.researchsquare.com/article/rs-3229244/v1)
 
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
+Selected past publications
+-======
+-Lyu, L., & Liu, M. (2023). Improve Efficiency of Doubly Robust Estimator when Propensity Score is Misspecified. Accepted by Statistica Sinica. [paper](https://www3.stat.sinica.edu.tw/ss_newpaper/SS-2023-0029_na.pdf)
 
