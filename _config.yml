@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Liangbo Lyu/吕良波"
+title                    : "Liangbo Lyu"
 title_separator          : "-"
 name                     : &name "Liangbo Lyu"
 description              : &description "Statistician"   # Update this with a general description of your site, this is the default if not overridden by a page
